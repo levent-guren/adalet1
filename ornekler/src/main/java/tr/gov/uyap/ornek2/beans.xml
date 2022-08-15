@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<bean id="benzinli" class="tr.gov.uyap.ornek2.BenzinliMotor">
+	</bean>
+	<bean id="dizel" class="tr.gov.uyap.ornek2.DizelMotor">
+	</bean>
+
+   
+	<bean id="araba" class="tr.gov.uyap.ornek2.Araba">
+		<property name="marka" value="Audi" />
+		<property name="motor" ref="benzinli" />
+	</bean>
+	
+ </beans>
